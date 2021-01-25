@@ -392,8 +392,7 @@ display: none;
     bottom: 0;
     left: 0;
     border: 3px solid #b59f5b;
-    opacity: 0.6;
-    z-index: 0;
+    opacity: 0.6;    
     z-index: -1;
 }
 
@@ -972,7 +971,7 @@ display: none;
 }
 /*tablet finish*/
 
-@media (min-width: 641px) and (orientation: landscape) {
+@media (min-width: 1000px) and (orientation: landscape) {
     .section-trends-container {        
         flex-wrap: nowrap;
         justify-content: space-between;        
