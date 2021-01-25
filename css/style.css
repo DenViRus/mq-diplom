@@ -1049,7 +1049,8 @@ display: none;
 
     .main-article-content {
         margin-top: 0;
-        margin-left: 10px;
+        margin-left: 20px;
+        width: calc(50% - 20px);
     }
 
     .main-article-heading-link {
