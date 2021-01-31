@@ -350,22 +350,42 @@ display: none;
     margin-top: 40px;
 }
 
-
 .section-trends-container {
     margin-top: 20px;
 }
 
 .section-trends-article {
     position: relative;
-    margin-bottom: 1px;    
+    display: flex;  
+    align-items: flex-end;
+    min-height: 235px;
+    padding: 15px;
+    margin-bottom: 1px;
+    background-color: #eff6f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 }
 
-.section-trends-article-picture {
-    position: relative;
-
+.trend-first {
+    background-image: url(../images/trend1.jpg);
 }
 
-.section-trends-article-picture::after {
+.trend-second {
+    background-image: url(../images/trend2.jpg);
+}
+
+.trend-third {
+    background-image: url(../images/trend3.jpg);
+}
+
+.trend-fourth {
+    background-image: url(../images/trend4.jpg);
+}
+
+
+
+.section-trends-article::after {
     content: "";
     background-color: #000000;
     position: absolute;
@@ -376,21 +396,12 @@ display: none;
     opacity: 0.6;
 }
 
-.section-trends-article-image {
-    width: 100%;
-    background-color: #eff6f1;     
-}
-
 .section-trends-article-content {
-    position: absolute;
-    max-width: 100%; 
-    bottom: 15px;
-    left: 15px;
-    right: 15px; 
+    width: 100%;
     padding: 30px 20px;
-    border: 3px solid #b59f5b;       
+    border: 3px solid #b59f5b;
+    z-index: 2;              
 }
-
 
 .page-tag-list {
     display: flex;
@@ -713,39 +724,33 @@ display: none;
 .section-shop-article {
     position: relative;
     margin-bottom: 20px;
-}
-
-.section-shop-article::after {
-    content: "";
-    position: absolute;
-    top: 200px;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    
-    border: 3px solid #b59f5b;
-    z-index: 1;    
+    display: flex;
+    flex-direction: column;
 }
 
 .section-shop-article-picture-item {
-    max-width: 90%;
+    width: 90%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section-shop-article-image {
-    width: 100%;
+    width: 100%;   
     background-color: #eff6f1;
 }
 
 .section-shop-article-content {
-    margin-top: 20px;
-    width: 90%;    
+    width: calc(90% + 40px);
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
     position: relative;
     z-index: 2;
+    border: 3px solid #b59f5b;   
+    top: -40px;
+    padding: 20px;
+    padding-top: 40px;
+    flex-grow: 1;
 }
 
 .section-shop-article-heading {
@@ -924,6 +929,7 @@ display: none;
     .content {
         width: 95%;
         display: flex;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
